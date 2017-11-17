@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>estafet-j2ee-journal</groupId>
+	<artifactId>estafet-j2ee-journal</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>estafet-j2ee-journal</name>
+	<packaging>pom</packaging>
+	<modules>
+		
+		<module>estafet-j2ee-journal-persistence</module>
+		<module>estafet-j2ee-journal-ejb-entry</module>
+		<module>estafet-j2ee-journal-ejb-user</module>
+		<module>estafet-j2ee-journal-ui</module>
+		<module>estafet-j2ee-journal-ear</module>
+	</modules>
+</project>

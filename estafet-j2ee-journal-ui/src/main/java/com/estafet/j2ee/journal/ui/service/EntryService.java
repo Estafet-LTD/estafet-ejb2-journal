@@ -1,0 +1,21 @@
+package com.estafet.j2ee.journal.ui.service;
+
+import java.rmi.RemoteException;
+
+import org.springframework.stereotype.Service;
+
+import com.estafet.j2ee.journal.dto.entry.UserEntries;
+import com.estafet.j2ee.journal.ejb.entry.JournalEntryServiceFactory;
+
+@Service
+public class EntryService {
+
+	public UserEntries getUserEntries(String userId) {
+		try {
+			return JournalEntryServiceFactory.instance().getUserEntries(userId);
+		} catch (RemoteException e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+}
