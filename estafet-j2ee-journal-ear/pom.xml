@@ -19,12 +19,12 @@
 			<version>0.0.1-SNAPSHOT</version>
 			<type>ejb</type>
 		</dependency>
-		<dependency>
+<!-- 		<dependency>
 			<groupId>estafet-j2ee-journal</groupId>
 			<artifactId>estafet-j2ee-journal-ui</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<type>war</type>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 	<build>
 		<plugins>
@@ -42,11 +42,11 @@
 							<groupId>estafet-j2ee-journal</groupId>
 							<artifactId>estafet-j2ee-journal-ejb-entry</artifactId>
 						</ejbModule>
-						<webModule>
+<!-- 						<webModule>
 							<groupId>estafet-j2ee-journal</groupId>
 							<artifactId>estafet-j2ee-journal-ui</artifactId>
-							<context-root>/login</context-root>
-						</webModule>
+							<context-root>/journal</context-root>
+						</webModule> -->
 					</modules>
 				</configuration>
 			</plugin>

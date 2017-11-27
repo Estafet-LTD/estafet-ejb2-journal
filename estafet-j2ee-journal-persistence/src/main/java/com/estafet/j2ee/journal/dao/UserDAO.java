@@ -10,7 +10,7 @@ import com.estafet.j2ee.journal.entity.JournalUser;
 
 public class UserDAO {
 
-	private EntityManager entityManager = Persistence.createEntityManagerFactory("j2ee").createEntityManager();
+	private EntityManager entityManager = Persistence.createEntityManagerFactory("journal").createEntityManager();
 	
 	public JournalUser getUser(String userId) {
 		return entityManager.find(JournalUser.class, userId);

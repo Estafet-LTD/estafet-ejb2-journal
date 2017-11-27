@@ -9,7 +9,7 @@ public class CreateUserParams implements Serializable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 9053622418153482448L;
+	private static final long serialVersionUID = 1L;
 
 	private String userId;
 	

@@ -16,7 +16,7 @@ public class JournalUserServiceBean implements SessionBean {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 9086829826064797839L;
+	private static final long serialVersionUID = 1L;
 
 	public User createUser(CreateUserParams params) {
 		return User.toUser(new UserDAO().createUser(params.toEntity()));

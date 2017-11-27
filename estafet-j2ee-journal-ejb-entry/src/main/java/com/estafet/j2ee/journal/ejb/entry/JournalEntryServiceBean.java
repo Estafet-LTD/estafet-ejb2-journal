@@ -19,7 +19,7 @@ public class JournalEntryServiceBean implements SessionBean {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 716464789181354752L;
+	private static final long serialVersionUID = 1L;
 
 	public UserEntries createEntry(CreateEntryParams params) {
 		new EntryDAO().createEntry(params.getUserId(), params.getEntryText(), params.getEntryDate());

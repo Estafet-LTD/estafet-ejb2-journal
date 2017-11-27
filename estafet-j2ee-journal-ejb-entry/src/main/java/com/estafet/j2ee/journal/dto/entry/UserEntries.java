@@ -14,7 +14,7 @@ public class UserEntries implements Serializable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -7412754338199754736L;
+	private static final long serialVersionUID = 1L;
 
 	private Map<Calendar, List<Entry>> entries = new HashMap<Calendar, List<Entry>>();
 

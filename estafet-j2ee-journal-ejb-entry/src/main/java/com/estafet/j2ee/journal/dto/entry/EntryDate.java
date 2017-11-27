@@ -10,7 +10,7 @@ public class EntryDate implements Serializable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -5533748384440105993L;
+	private static final long serialVersionUID = 1L;
 
 	private Calendar date;
 

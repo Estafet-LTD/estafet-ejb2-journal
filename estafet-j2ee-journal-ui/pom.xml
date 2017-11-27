@@ -20,6 +20,10 @@
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-tomcat</artifactId>
 				</exclusion>
+				<exclusion>
+					<groupId>org.hibernate</groupId>
+					<artifactId>hibernate-validator</artifactId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
@@ -47,18 +51,40 @@
 			<version>3.0.3.Final</version>
 			<type>pom</type>
 			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.hibernate.javax.persistence</groupId>
+					<artifactId>hibernate-jpa-2.0-api</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>		
 		<dependency>
 			<groupId>estafet-j2ee-journal</groupId>
 			<artifactId>estafet-j2ee-journal-ejb-entry</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<type>ejb</type>
+			<exclusions>
+				<exclusion>
+					<groupId>estafet-j2ee-journal</groupId>
+					<artifactId>
+						estafet-j2ee-journal-persistence
+					</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>estafet-j2ee-journal</groupId>
 			<artifactId>estafet-j2ee-journal-ejb-user</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<type>ejb</type>
+			<exclusions>
+				<exclusion>
+					<groupId>estafet-j2ee-journal</groupId>
+					<artifactId>
+						estafet-j2ee-journal-persistence
+					</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
 	<properties>

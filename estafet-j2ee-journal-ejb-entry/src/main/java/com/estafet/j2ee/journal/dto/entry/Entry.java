@@ -12,7 +12,7 @@ public class Entry implements Serializable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -1532671940510155425L;
+	private static final long serialVersionUID = 1L;
 
 	private Integer entryId;
 

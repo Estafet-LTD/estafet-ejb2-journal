@@ -23,7 +23,7 @@ public class LoginController {
 	@GetMapping("/login")
 	public String loginSubmit(@ModelAttribute String userId) {
 		User user = userService.getUser(userId);
-		return user != null ? "redirect:/user/" + userId : "newUser";
+		return user != null ? "redirect:/user/" + userId : "redirect:/newUser";
 	}
 	
 }

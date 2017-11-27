@@ -8,7 +8,7 @@ public class CreateEntryParams implements Serializable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 5898868299626487516L;
+	private static final long serialVersionUID = 1L;
 
 	private String userId;
 

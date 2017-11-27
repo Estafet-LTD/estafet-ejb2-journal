@@ -11,7 +11,7 @@ import com.estafet.j2ee.journal.entity.JournalUser;
 
 public class EntryDAO {
 
-	private EntityManager entityManager = Persistence.createEntityManagerFactory("j2ee").createEntityManager();
+	private EntityManager entityManager = Persistence.createEntityManagerFactory("journal").createEntityManager();
 
 	@SuppressWarnings("unchecked")
 	public List<JournalEntry> getUsersEntriesByDate(String userId) {
