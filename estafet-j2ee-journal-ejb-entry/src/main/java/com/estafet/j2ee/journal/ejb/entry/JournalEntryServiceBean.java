@@ -22,14 +22,14 @@ public class JournalEntryServiceBean implements SessionBean {
 	private static final long serialVersionUID = 1L;
 
 	public UserEntries createEntry(CreateEntryParams params) {
-		new EntryDAO().createEntry(params.getUserId(), params.getEntryText(), params.getEntryDate());
+		EntryDAO.instance().createEntry(params.getUserId(), params.getEntryText(), params.getEntryDate());
 		return getUserEntries(params.getUserId());
 	}
 
 	public UserEntries getUserEntries(String userId) {
 		try {
 			User user = JournalUserServiceFactory.instance().getUser(userId);
-			List<Entry> entries = Entry.toEntries(new EntryDAO().getUsersEntriesByDate(userId));
+			List<Entry> entries = Entry.toEntries(EntryDAO.instance().getUserEntries(userId));
 			return new UserEntries(user, entries);
 		} catch (RemoteException e) {
 			throw new RuntimeException(e);

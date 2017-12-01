@@ -19,15 +19,15 @@ public class JournalUserServiceBean implements SessionBean {
 	private static final long serialVersionUID = 1L;
 
 	public User createUser(CreateUserParams params) {
-		return User.toUser(new UserDAO().createUser(params.toEntity()));
+		return User.toUser(UserDAO.instance().createUser(params.toEntity()));
 	}
 	
 	public List<User> getAllUsers() {
-		return User.toUsers(new UserDAO().getAllUsers());
+		return User.toUsers(UserDAO.instance().getAllUsers());
 	}
 	
 	public User getUser(String userId) {
-		return User.toUser(new UserDAO().getUser(userId));
+		return User.toUser(UserDAO.instance().getUser(userId));
 	}
 	
 	public void ejbActivate() throws EJBException, RemoteException {
