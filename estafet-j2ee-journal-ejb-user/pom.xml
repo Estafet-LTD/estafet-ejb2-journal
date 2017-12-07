@@ -6,8 +6,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>estafet-j2ee-journal-ejb-user</name>
 	<packaging>ejb</packaging>
-	
-		<dependencies>
+
+	<dependencies>
 		<dependency>
 			<groupId>org.jboss.spec</groupId>
 			<artifactId>jboss-javaee-6.0</artifactId>
@@ -39,10 +39,10 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-	
+
 </project>

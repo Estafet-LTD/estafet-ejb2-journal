@@ -6,11 +6,10 @@
 	<div layout:fragment="content">
 		<h2>Task</h2>
 		<div>
-			<form action="#" th:action="@{'/task/' + ${storyId}}" th:object="${task}" method="post">
+			<form action="#" th:action="@{/login}" th:object="${user}" method="post">
 				<div>
-					<label>Title:</label> <input type="text" th:field="*{title}"/>
-					<label>Description:</label> <input type="text" th:field="*{description}"/>
-					<label>Estimate:</label> <input type="text" th:field="*{initialHours}"/>
+					<label>Name:</label> <input type="text" th:field="*{name}"/>
+					<label>User ID:</label> <input type="text" th:field="*{userId}"/>
 				</div>
 				<div>
 					<input type="submit" value="Submit" />

@@ -13,9 +13,8 @@ public class JournalEntryServiceFactory {
 	public static JournalEntryService instance() {
 		try {
 			Properties p = new Properties();
-			p.put(Context.INITIAL_CONTEXT_FACTORY, "org.jnp.interfaces.NamingContextFactory");
-			p.put(Context.URL_PKG_PREFIXES, "org.jboss.naming:org.jnp.interfaces");
-			p.put(Context.PROVIDER_URL, "localhost");
+			p.put(Context.INITIAL_CONTEXT_FACTORY, "org.jboss.naming.remote.client.InitialContextFactory");
+			p.put(Context.PROVIDER_URL, "remote://localhost:4447");
 			InitialContext ctx = new InitialContext(p);
 			JournalEntryServiceHome home = (JournalEntryServiceHome) ctx.lookup("jndi_JournalEntryService");
 			return home.create();
